@@ -61,16 +61,16 @@ section {
     float: right;
 
     height: 70px;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .to-connect > a { padding: 10px; }
 
-.jaime {
+.curriculum {
     background-color: white;
     color: black;
 
-    height: 60px;
+    height: 50px;
     width: 180px;
 
     text-align: center;
