@@ -68,7 +68,6 @@ section {
 
 .curriculum {
     background-color: white;
-    color: black;
 
     height: 50px;
     width: 180px;
@@ -76,4 +75,14 @@ section {
     text-align: center;
     padding-top: 15px;
     margin-right: 20px;
+}
+
+.curriculum > a {
+    display: block;
+
+    text-decoration: none;
+    color: black;
+
+    height: 100%;
+    width: 100%;
 }

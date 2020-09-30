@@ -19,10 +19,11 @@
         <section class="description">
             <div class="entry-content">
                 <div class="to-connect">
-                    <div class="curriculum"> Resume </div>
-
                     {% load static %}
-                    <a  href="https://es.linkedin.com/in/jaimedgp" >
+                    <div class="curriculum">
+                        <a href="{% static 'docs/CV_En.pdf' %}"> Resume </a>
+                    </div>
+                    <a  href="https://es.linkedin.com/in/jaimedgp">
                         <img style="height: 50px;" src="{% static 'Home_page/linkedin.png' %}"title="Linkedin Profile"></img>
                     </a>
                     <a href = "mailto: abc@example.com">
@@ -37,7 +38,7 @@
             </div>
         </section>
 
-        <! --
+        <!--
         <section>
             <div class="entry-content">
                 <div data-aos="fade-up"
