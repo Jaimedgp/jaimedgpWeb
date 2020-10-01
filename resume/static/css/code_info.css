@@ -1,0 +1,28 @@
+#code {
+    display: flex;
+}
+
+.new-project {
+    width: 30vw;
+
+    margin: auto;
+    text-align: center;
+}
+
+
+.new-project > h1 { font-size:60px; }
+
+.new-project > p {
+    font-size: 30px;
+    color: gray;
+
+}
+
+.link-github { padding-top: 50px; }
+
+.link-github > a > p {
+    font-size: 40px;
+    color: black;
+}
+
+.link-github > a { text-decoration: none; }

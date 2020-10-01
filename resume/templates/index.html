@@ -26,13 +26,13 @@
                         <a href="{% static 'docs/CV_En.pdf' %}"> Resume </a>
                     </div>
                     <a  href="https://es.linkedin.com/in/jaimedgp">
-                        <img style="height: 50px;" src="{% static 'Home_page/linkedin.png' %}"title="Linkedin Profile"></img>
+                        <img style="height: 50px;" src="{% static 'Photos/Home_page/linkedin.png' %}"title="Linkedin Profile"></img>
                     </a>
                     <a href = "mailto: jaimediezgp@gmail.com">
-                    <img style="height: 50px;" src="{% static 'Home_page/email.png' %}"></img>
+                    <img style="height: 50px;" src="{% static 'Photos/Home_page/email.png' %}"></img>
                     </a>
                     <a  href="https://github.com/Jaimedgp">
-                    <img style="height: 50px;" src="{% static 'Home_page/github.png' %}" title="Linkedin Profile"></img>
+                    <img style="height: 50px;" src="{% static 'Photos/Home_page/github.png' %}" title="Linkedin Profile"></img>
                     </a>
                 </div>
 
@@ -49,15 +49,51 @@
 
         <!-- CODE INFORMATION -->
         <section>
-            <div class="entry-content">
-            <!--
-                <div data-aos="fade-up"
+            <div class="entry-content" id="code">
+
+                <!-- MULTI-DAQ -->
+                <div class="new-project" data-aos="fade-up"
+                        data-aos-duration="5000"
+                        data-aos-anchor-placement="bottom-bottom">
+                            {% load static %}
+                            <img style="width:30vw;" src="{% static 'Photos/Code/Muon.png' %}"></img>
+                            <h1> MULTI-DAQ </h1>
+
+                            <p> In 2018 I developed a data acquisition program to measure muon half-life written in <b style="color: black;">C++</b> for the high energy department of the Institute of Physics of Cantabria <b style="color: black;">(IFCA)</b> with the aim of being used in an experiment of the degree in Physics of the University of Cantabria </p>
+                </div>
+
+                <!-- JUST A GRPAHICS PRINTER -->
+                <div class="new-project" data-aos="fade-up"
+                        data-aos-duration="5000"
+                        data-aos-anchor-placement="bottom-bottom">
+                    <h1 style="text-decoration:none;"><a style="text-decoration:none;" href="https://github.com/Jaimedgp/J_Graphics_P"> J_Graphics_P </a></h1>
+
+                            <p>During the first two years of university I developed a <b style="color: black;">data analysis</b> program with the aim of learning <b style="color: black;">Python</b> in a self-taught way, which would also help me in the laboratory practices of the degree. Thanks to this I was able to learn several Python modules such as <b style="color: black;">NumPy</b> or <b style="color: black;">Matplotlib</b>, including a GUI with <b style="color: black;">PyQT</b></p>
+                            {% load static %}
+
+                            <img style="width:30vw;" src="{% static 'Photos/Code/JGP.png' %}"></img>
+                </div>
+
+                <!-- MY OWN WEBPAGE -->
+                <div class="new-project" data-aos="fade-up"
                     data-aos-duration="5000"
                     data-aos-anchor-placement="bottom-bottom">
                         {% load static %}
-                        <img style="width:33vh;" src="{% static 'Home_page/MultiDAQ.png' %}"></img>
+                        <img style="width:30vw;" src="{% static 'Photos/Code/webpage.png' %}"></img>
+
+                        <h1>This Webpage</h1>
+
+                        <p>I started developing this website as a personal project to learn about web development and the python <b style="color: black;">Django</b> framework, as well as increasing my knowledge of <b style="color: black;">javascript</b>, <b style="color: black;">HTML</b> and <b style="color: black;">CSS</b></p>
+
+                        <div class="link-github" data-aos="fade-up"
+                            data-aos-duration="5000"
+                            data-aos-anchor-placement="bottom-bottom">
+
+                            <a href="https://github.com/Jaimedgp?tab=repositories"><p> <img style="width:80px;" src="{% static 'Photos/Code/github.png' %}"></img>
+                            More Projects >>
+                            </p></a>
+                        </div>
                 </div>
-            -->
             </div>
         </section>
 

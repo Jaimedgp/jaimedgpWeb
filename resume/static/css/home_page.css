@@ -1,0 +1,69 @@
+/* PRESENTATION TITLE */
+.description {
+    background-image: url("/static/Photos/Home_page/bkgnd.png");
+    color: white;
+}
+
+
+.content {
+    display: contents;
+    overflow: scroll;
+}
+
+
+.content > h1 {
+    display: block;
+
+    font-size: 12vw;
+    text-align: center;
+
+    margin: 0 0;
+    padding: 20vh 0 50px 0;
+}
+
+
+.content > p {
+    font-size: 3vw;
+    text-align: center;
+
+    width: 70vw;
+    margin: 5px 15vw 5px 15vw;
+
+    color: gray;
+}
+
+
+.to-connect {
+    display: inline-flex;
+    float: right;
+
+    height: 70px;
+    font-size: 30px;
+}
+
+
+.to-connect > a { padding: 10px; }
+
+
+.curriculum {
+    background-color: white;
+
+    height: 50px;
+    width: 180px;
+
+    text-align: center;
+    padding-top: 15px;
+    margin-right: 20px;
+}
+
+
+.curriculum > a {
+    display: block;
+
+    text-decoration: none;
+    color: black;
+
+    height: 100%;
+    width: 100%;
+}
+
