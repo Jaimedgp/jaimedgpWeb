@@ -12,6 +12,11 @@
 
 .new-project > h1 { font-size:60px; }
 
+.new-project > h1 > a {
+    text-decoration: none;
+    color: black;
+}
+
 .new-project > p {
     font-size: 30px;
     color: gray;
@@ -20,9 +25,9 @@
 
 .link-github { padding-top: 50px; }
 
-.link-github > a > p {
+.link-github > a {
+    text-decoration: none;
     font-size: 40px;
     color: black;
 }
 
-.link-github > a { text-decoration: none; }
