@@ -48,7 +48,9 @@
     width: 90%;
 }
 
-.link-github { padding-top: 10vh; }
+.link-github { padding-top: 12vh; }
+
+.link-github > a > p { margin: 0; }
 
 .link-github > a {
     float: right;
