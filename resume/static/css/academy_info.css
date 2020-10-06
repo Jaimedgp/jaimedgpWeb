@@ -1,0 +1,40 @@
+.academy {
+    background-image: url("/static/Photos/academic/estudios.jpg");
+    background-size: 35% 100%;
+    background-position: left center;
+}
+
+.cv-entry {
+    height: 30vh;
+
+    margin: auto;
+    text-align: center;
+}
+
+.cv-title {
+    float: left;
+
+    height: 100%;
+    width: 35%;
+}
+
+.cv-description {
+    float: right;
+
+    height: 100%;
+    width: 65%;
+}
+
+.cv-title > h1 {
+    text-align: center;
+
+    font-size: 55px;
+    color: white;
+}
+
+.cv-description > p {
+    font-size: 25px;
+    color: gray;
+
+    padding: 20px 45px 20px 45px;
+}
