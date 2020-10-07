@@ -148,11 +148,45 @@
         </section>
 
         <!-- SPORTS INFORMATION -->
-        <section class="sport">
-            <div class="entry-content">
+        <section>
+            <div class="entry-content" id="sport">
                 <div class="handball">
-                    {% load static %}
-                    <img src="{% static 'Photos/sport/handball.png' %}"></img>
+                    <div class="horizontal-entry">
+                        {% load static %}
+                        <img src="{% static 'Photos/sport/handball.png' %}"></img>
+                        <p>Mientras todos piensen que estas acabado, es cuando tienes que subir mas</p>
+                    </div>
+                    <div class="horizontal-entry">
+                        {% load static %}
+                        <img src="{% static 'Photos/sport/referee.png' %}"></img>
+                        <p>Mientras todos piensen que estas acabado, es cuando tienes que subir mas</p>
+                    </div>
+                </div>
+                <div class="triatlon">
+                    <div class="tri-col">
+                        <div class="horizontal-entry" id="tri-basics">
+                            {% load static %}
+                            <img src="{% static 'Photos/sport/bici.png' %}"></img>
+                            <p>Mientras todos piensen que estas acabado, es cuando tienes que subir mas</p>
+                        </div>
+                        <div class="horizontal-entry" id="tri-basics">
+                            {% load static %}
+                            <img src="{% static 'Photos/sport/mediamaraton.png' %}"></img>
+                            <p>Mientras todos piensen que estas acabado, es cuando tienes que subir mas</p>
+                        </div>
+                        <div class="horizontal-entry" id="tri-basics">
+                            {% load static %}
+                            <img src="{% static 'Photos/sport/natacion.png' %}"></img>
+                            <p>Mientras todos piensen que estas acabado, es cuando tienes que subir mas</p>
+                        </div>
+                    </div>
+                    <div class="tri-col">
+                        <div class="horizontal-entry" id="tri-main">
+                            {% load static %}
+                            <img src="{% static 'Photos/sport/triatlon.png' %}"></img>
+                            <p>Mientras todos piensen que estas acabado, es cuando tienes que subir mas</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

@@ -1,17 +1,56 @@
 #sport {
-    display: flex;
-    margin: 0 0;
-
     background: whitesmoke;
+    margin: 0 0;
+}
+
+.horizontal-entry {
+    display: inline-flex;
+
+    width: 40vw;
+    height: 25vh;
+
+    margin: 20px 40px;
+
+    background: white;
+    border-radius: 100vh 250px 250px 100vh;
+}
+
+.horizontal-entry > img {
+    height: 95%;
+    margin: 1.5%;
+}
+
+.horizontal-entry > p {
+    font-size: 20px;
+    padding: 10px;
 }
 
 .handball {
+    display: flex;
+    padding: 50px calc((10vw - 60px));
+}
+
+.triatlon {
+    margin: 20px 0;
+}
+
+.tri-col {
+    display: flex;
+
+    margin: 10px 1.8vw;
+}
+
+#tri-basics {
     width: 30vw;
-    height: 80vh;
+    height: 20vh;
 
-    margin: auto;
-    margin-top: 100px;
+    margin: 20px 10px;
+}
 
-    background: white;
-    border-radius: 40px;
+#tri-main {
+    width: 60vw;
+    height: 30vh;
+
+    margin-left: 20vw;
+    margin-right: 20vw;
 }
