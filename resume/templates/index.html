@@ -196,12 +196,27 @@
         </section>
 
         <!-- PHOTOGRAPHY INFORMATION -->
-        <!--
-        <section>
+        <section class="photography">
             <div class="entry-content">
+                <div class="header">
+                    <h1><b>Photo Gallery</b></h1>
+                    <p>As part of my hobbies, photography must be added, which I try to learn in a self-taught way</p>
+                </div>
+
+                <div class="gallery">
+                    {% load static %}
+                    <div class="photo">
+                        <img src="{% static 'Photos/Gallery/Edited_5848.JPG' %}"></img>
+                    </div>
+                    <div class="photo">
+                        <img src="{% static 'Photos/Gallery/IMG_6014.JPG' %}"></img>
+                    </div>
+                    <div class="photo">
+                        <img src="{% static 'Photos/Gallery/IMG_5205.JPG' %}"></img>
+                    </div>
+                </div>
             </div>
         </section>
-        -->
     </body>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
