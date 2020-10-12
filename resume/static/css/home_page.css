@@ -17,6 +17,9 @@
     font-size: 12vw;
     text-align: center;
 
+    top:0;
+    position: relative;
+
     margin: 0 0;
     padding: 20vh 0 50px 0;
 }
@@ -30,6 +33,9 @@
     margin: 5px 15vw 5px 15vw;
 
     color: gray;
+
+    top:0;
+    position: relative;
 }
 
 
