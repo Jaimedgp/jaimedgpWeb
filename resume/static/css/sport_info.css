@@ -39,20 +39,22 @@
 .tri-col {
     display: flex;
 
-    margin: 10px 1.8vw;
+    margin: calc(((80vh - 100px) - 40vh) / 4) 1.8vw;
 }
 
-#tri-basics {
-    width: 30vw;
-    height: 20vh;
+.strava-icon{ width: calc(20vw - 160px); }
 
-    margin: 20px 10px;
+.strava-icon > a > img {
+    width: 100%;
+    margin-top: calc((25vh - (20vw - 160px)) / 2);
+
+    filter: grayscale(100%);
 }
 
-#tri-main {
-    width: 60vw;
-    height: 30vh;
+a > img:hover {
+    filter: grayscale(0%);
+}
 
-    margin-left: 20vw;
-    margin-right: 20vw;
+#center-entry {
+    margin: 0 calc((60vw - 80px) /2);
 }
