@@ -1,4 +1,6 @@
-.photography {
+#photographySec {
+    height: 100vh;
+
     background-image: url("/static/Photos/Gallery/BW_5340.jpg");
     background-size: 100vw 40vh;
     background-position: top center;
