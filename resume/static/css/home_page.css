@@ -6,8 +6,12 @@
 
 
 .content {
-    display: contents;
-    overflow: scroll;
+    width: 80%;
+    margin: 0px 10%;
+
+    position: relative;
+    top: 70px;
+    display: block;
 }
 
 
@@ -30,7 +34,7 @@
     text-align: center;
 
     width: 70vw;
-    margin: 5px 15vw 5px 15vw;
+    margin: 5px 5vw;
 
     color: gray;
 
@@ -40,7 +44,7 @@
 
 
 .to-connect {
-    display: inline-flex;
+    display: flex;
     float: right;
 
     height: 70px;
