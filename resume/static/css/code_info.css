@@ -1,8 +1,8 @@
+#codeSec { background: whitesmoke; }
+
 #code {
     display: flex;
     margin: 0 0;
-
-    background: whitesmoke;
 }
 
 .column {

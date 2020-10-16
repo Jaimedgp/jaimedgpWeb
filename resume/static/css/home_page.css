@@ -1,13 +1,17 @@
 /* PRESENTATION TITLE */
-.description {
+#descriptionSec {
     background-image: url("/static/Photos/Home_page/bkgnd.png");
     color: white;
 }
 
 
 .content {
-    display: contents;
-    overflow: scroll;
+    width: 80%;
+    margin: 0px 10%;
+
+    position: relative;
+    top: 70px;
+    display: block;
 }
 
 
@@ -16,6 +20,9 @@
 
     font-size: 12vw;
     text-align: center;
+
+    top:0;
+    position: relative;
 
     margin: 0 0;
     padding: 20vh 0 50px 0;
@@ -27,14 +34,17 @@
     text-align: center;
 
     width: 70vw;
-    margin: 5px 15vw 5px 15vw;
+    margin: 5px 5vw;
 
     color: gray;
+
+    top:0;
+    position: relative;
 }
 
 
 .to-connect {
-    display: inline-flex;
+    display: flex;
     float: right;
 
     height: 70px;

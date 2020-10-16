@@ -13,13 +13,12 @@
         {% load static %}
         <link rel="icon" href="{% static 'Photos/logo_Wht.png' %}">
         <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
 
-    <body data-aos-duration="0">
+    <body>
 
         <!-- HOME PAGE -->
-        <section class="description">
+        <section id="descriptionSec">
             <div class="entry-content">
                 <div class="to-connect">
                     {% load static %}
@@ -49,15 +48,12 @@
         </section>
 
         <!-- CODE INFORMATION -->
-        <section>
+        <section id="codeSec">
             <div class="entry-content" id="code">
 
                 <div class="column">
                     <!-- MULTI-DAQ -->
-                    <div class="new-project" style="margin-bottom: 15vh;"
-                        data-aos="fade-up"
-                        data-aos-duration="5000"
-                        data-aos-anchor-placement="bottom-bottom">
+                    <div class="new-project" style="margin-bottom: 15vh;" >
                             {% load static %}
                             <img src="{% static 'Photos/Code/Muon.png' %}"></img>
                             <h1><a href="https://github.com/Jaimedgp/Muon-Experiment-reader"> MULTI-DAQ </a></h1>
@@ -68,10 +64,7 @@
 
                 <div class="column">
                     <!-- JUST A GRPAHICS PRINTER -->
-                    <div class="new-project" style="margin-top: 15vh;"
-                        data-aos="fade-up"
-                        data-aos-duration="5000"
-                        data-aos-anchor-placement="bottom-bottom">
+                    <div class="new-project" style="margin-top: 15vh;" >
                             <h1><a href="https://github.com/Jaimedgp/J_Graphics_P"> J Graphics P </a></h1>
 
                             <p>During the first two years of university I developed a <b style="color: black;">data analysis</b> program with the aim of learning <b style="color: black;">Python</b> in a self-taught way, which would also help me in the laboratory practices of the degree. Thanks to this I was able to learn several Python modules such as <b style="color: black;">NumPy</b> or <b style="color: black;">Matplotlib</b>, including a GUI with <b style="color: black;">PyQT</b></p>
@@ -83,10 +76,7 @@
 
                 <div class="column">
                     <!-- MY OWN WEBPAGE -->
-                    <div class="new-project"
-                        data-aos="fade-up"
-                        data-aos-duration="5000"
-                        data-aos-anchor-placement="bottom-bottom">
+                    <div class="new-project">
                             {% load static %}
                             <img src="{% static 'Photos/Code/webpage.png' %}"></img>
 
@@ -96,12 +86,6 @@
 
                     </div>
                     <div class="link-github">
-                            <!--
-                            data-aos="fade-up"
-                            data-aos-duration="5000"
-                            data-aos-anchor-placement="bottom-bottom">
-                            -->
-
                         <a href="https://github.com/Jaimedgp?tab=repositories"><p> <img style="height:40px;" src="{% static 'Photos/Code/github.png' %}"></img>
                         More Projects >>
                         </p></a>
@@ -111,7 +95,7 @@
         </section>
 
         <!-- ACADEMY INFORMATION -->
-        <section class="academy">
+        <section id="academySec">
             <div class="entry-content">
                 <!-- MSc Data Science -->
                 <div class="cv-entry" id="master">
@@ -149,7 +133,7 @@
         </section>
 
         <!-- SPORTS INFORMATION -->
-        <section>
+        <section id="sportSec">
             <div class="entry-content" id="sport">
                 <div class="handball">
                     <div class="horizontal-entry">
@@ -204,7 +188,7 @@
         </section>
 
         <!-- PHOTOGRAPHY INFORMATION -->
-        <section class="photography">
+        <section id="photographySec">
             <div class="entry-content">
                 <div class="header">
                     <h1><b>Photo Gallery</b></h1>
@@ -227,9 +211,7 @@
         </section>
     </body>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    {% load static %}
+    <script type="text/javascript" src="{% static 'javascript/main.js' %}"></script>
 </html>
 

@@ -1,7 +1,5 @@
-#sport {
-    background: whitesmoke;
-    margin: 0 0;
-}
+#sportSec { background: whitesmoke; }
+#sport { margin: 0 0; }
 
 .horizontal-entry {
     display: inline-flex;
