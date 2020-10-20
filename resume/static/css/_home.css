@@ -1,7 +1,9 @@
 /* PRESENTATION TITLE */
 #home {
-    background: url('/static/Photos/Home_page/bkgnd.png') no-repeat center center fixed;
+    background: url('/static/Photos/Home_page/bkgnd.png') no-repeat center center;
     color: white;
+
+    z-index: -1;
 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -11,25 +13,22 @@
 
 .nav-container {
     background-color: transparent;
-    width: 100%;
-}
-nav {
-    width: 90%;
-    margin: auto;
-    min-height: 5vh;
-    padding: 1rem 0rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-nav > ul {
-    display: flex;
-    justify-content: space-between;
-    flex: 1;
-    list-style: none;
 }
 
-nav > h1 { flex: 3; }
+nav {
+    width: 80%;
+    margin: auto;
+    height: 7.5vh;
+}
+
+nav > ul {
+    display: flex;
+    list-style: none;
+
+    float: right;
+}
+
+nav ul > li { padding: 1rem; }
 
 .resume {
     background: white;
@@ -37,7 +36,6 @@ nav > h1 { flex: 3; }
     decoration: none;
     margin: auto;
 }
-
 
 .home-title {
     display: grid;
@@ -51,9 +49,10 @@ nav > h1 { flex: 3; }
 .home-title > h1{
     grid-column: 2/3;
     grid-row: 1/2;
-    margin: auto;
+
+    align-self: end;
 }
-.home-title > h2 {
+.home-title > h4 {
     grid-column: 2/3;
     grid-row: 2/3;
 
@@ -63,7 +62,8 @@ nav > h1 { flex: 3; }
 
 
 @media screen and (max-width: 1200px) {
-    nav > h1 { flex: 0; }
-    h1 { font-size: 10rem; }
-    .home-title { grid-template-columns: 10% 1fr 10%; }
+    .home-title {
+        grid-template-columns: 10% 1fr 10%;
+        grid-template-rows: 2fr 2fr 1fr ;
+    }
 }
