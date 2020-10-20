@@ -34,10 +34,5 @@ a {
 
 @media screen and (max-width: 1200px) {
     html{ font-size: 40%; }
-
-    nav > h1 { flex: 0; }
     h1 { font-size: 10rem; }
-    .home-title { grid-template-columns: 10% 1fr 10%; }
-
-    .cards { flex-direction: column; }
 }

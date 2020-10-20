@@ -10,12 +10,17 @@
 
 .cards {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .cards .card{
     background: white;
     margin: 5% 3rem;
+
+    max-width: 30%;
+    min-width: 20rem;
 
     display: flex;
     justify-content: space-between;
@@ -32,6 +37,12 @@
 
 img {
     max-width: 90%;
-    margin: auto;
+    margin: 1rem auto;
 }
 
+@media screen and (max-width: 1200px) {
+
+    .cards { flex-direction: column; }
+
+    .cards .card{ max-width: 100%; }
+}
