@@ -1,0 +1,37 @@
+#codeSec {
+    background: whitesmoke;
+    min-height: 90vh;
+}
+
+.projects{
+    width: 80%;
+    margin: auto;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards .card{
+    background: white;
+    margin: 5% 3rem;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+
+    border-radius: 3rem;
+}
+
+.cards .card p {
+    padding: 3rem;
+}
+
+
+img {
+    max-width: 90%;
+    margin: auto;
+}
+

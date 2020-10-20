@@ -16,202 +16,82 @@
     </head>
 
     <body>
-
-        <!-- HOME PAGE -->
-        <section id="descriptionSec">
-            <div class="entry-content">
-                <div class="to-connect">
-                    {% load static %}
-                    <div class="curriculum">
-                        <a href="{% static 'docs/CV_En.pdf' %}" title="My Resume"> Resume </a>
-                    </div>
-                    <a  href="https://es.linkedin.com/in/jaimedgp">
-                        <img style="height: 50px;" src="{% static 'Photos/Home_page/linkedin.png' %}"title="Linkedin Profile"></img>
-                    </a>
-                    <a href = "mailto: jaimediezgp@gmail.com">
-                    <img style="height: 50px;" src="{% static 'Photos/Home_page/email.png' %}" title="jaimediezgp@gmail.com"></img>
-                    </a>
-                    <a  href="https://github.com/Jaimedgp">
-                    <img style="height: 50px;" src="{% static 'Photos/Home_page/github.png' %}" title="Github Profile"></img>
-                    </a>
+        <main>
+            <section id="home">
+                <div class="nav-container">
+                    <nav>
+                        <!--<img id="logo" src="{% static 'Photos/logo.png' %}"></img>-->
+                        <h1></h1>
+                        <ul>
+                            <li><a class="resume" href="{% static 'docs/CV_En.pdf' %}" title="My Resume"> Resume </a></li>
+                            <li> <a  href="https://es.linkedin.com/in/jaimedgp">
+                                <img style="height: 50px;" src="{% static 'Photos/Home_page/linkedin.png' %}"title="Linkedin Profile"></img> </a> </li>
+                            <li> <a href = "mailto: jaimediezgp@gmail.com">
+                                <img style="height: 50px;" src="{% static 'Photos/Home_page/email.png' %}" title="jaimediezgp@gmail.com"></img> </a> </li>
+                            <li> <a  href="https://github.com/Jaimedgp">
+                                <img style="height: 50px;" src="{% static 'Photos/Home_page/github.png' %}" title="Github Profile"></img> </a> </li>
+                        </ul>
+                    </nav>
                 </div>
 
-                <div class="content">
+                <div class="home-title">
                     <h1 id="Title"> JaimeDGP </h1>
-                    <p id="description">
-                        I'm <b style="color: white;">Physicist</b> and MSc <b style="color: white">Data Science</b> student, <b style="color: white">Sport</b> lover and newbie in <b style="color: white">Photography</b>
-                    </p>
-                        <hr style="width:50%; margin-top: 200px; border-color: gray;">
-                    <p> Scroll </p>
+                    <h2 id="description">
+                        I'm <b style="color: white;">Physicist</b> and MSc <b style="color: white">Data Science</b> student,
+                        <b style="color: white">Sport</b> lover and newbie in <b style="color: white">Photography</b>
+                    </h2>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- CODE INFORMATION -->
-        <section id="codeSec">
-            <div class="entry-content" id="code">
+            <!-- CODE INFORMATION -->
+            <section id="codeSec">
 
-                <div class="column">
-                    <!-- MULTI-DAQ -->
-                    <div class="new-project" style="margin-bottom: 15vh;" >
-                            {% load static %}
+                <div class="projects">
+                    <div class="cards">
+                        <div class="card">
                             <img src="{% static 'Photos/Code/Muon.png' %}"></img>
-                            <h1><a href="https://github.com/Jaimedgp/Muon-Experiment-reader"> MULTI-DAQ </a></h1>
-
-                            <p> In 2018 I developed a data acquisition program to measure muon half-life written in <b style="color: black;">C++</b> for the high energy department of the Institute of Physics of Cantabria <b style="color: black;">(IFCA)</b> with the aim of being used in an experiment of the degree in Physics of the University of Cantabria </p>
-                    </div>
-                </div>
-
-                <div class="column">
-                    <!-- JUST A GRPAHICS PRINTER -->
-                    <div class="new-project" style="margin-top: 15vh;" >
-                            <h1><a href="https://github.com/Jaimedgp/J_Graphics_P"> J Graphics P </a></h1>
-
-                            <p>During the first two years of university I developed a <b style="color: black;">data analysis</b> program with the aim of learning <b style="color: black;">Python</b> in a self-taught way, which would also help me in the laboratory practices of the degree. Thanks to this I was able to learn several Python modules such as <b style="color: black;">NumPy</b> or <b style="color: black;">Matplotlib</b>, including a GUI with <b style="color: black;">PyQT</b></p>
-
+                            <h2><a href="https://github.com/Jaimedgp/Muon-Experiment-reader"> MULTI-DAQ </a></h2>
+                            <p> In 2018 I developed a data acquisition program to measure muon half-life written
+                                in <b style="color: black;">C++</b> for the high energy department of the Institute
+                                of Physics of Cantabria <b style="color: black;">(IFCA)</b> with the aim of being
+                                used in an experiment of the degree in Physics of the University of Cantabria </p>
+                        </div>
+                        <!-- JUST A GRAPHICS PRINTER -->
+                        <div class="card">
                             {% load static %}
                             <img src="{% static 'Photos/Code/JGP.png' %}"></img>
-                    </div>
-                </div>
-
-                <div class="column">
-                    <!-- MY OWN WEBPAGE -->
-                    <div class="new-project">
+                            <h2><a href="https://github.com/Jaimedgp/J_Graphics_P"> J Graphics P </a></h2>
+                            <p> During the first two years of university I developed a <b style="color: black;">data
+                                analysis</b> program with the aim of learning <b style="color: black;">Python</b> in
+                                a self-taught way, which would also help me in the laboratory practices of the degree.
+                                Thanks to this I was able to learn several Python modules such as
+                                <b style="color: black;">NumPy</b> or <b style="color: black;">Matplotlib</b>, including
+                                a GUI with <b style="color: black;">PyQT</b></p>
+                        </div>
+                        <!-- MY OWN WEBPAGE -->
+                        <div class="card">
                             {% load static %}
                             <img src="{% static 'Photos/Code/webpage.png' %}"></img>
-
-                            <h1><a href="https://github.com/Jaimedgp/jaimedgpWeb"> This Webpage </a></h1>
-
-                            <p>I started developing this website as a personal project to learn about web development and the python <b style="color: black;">Django</b> framework, as well as increasing my knowledge of <b style="color: black;">javascript</b>, <b style="color: black;">HTML</b> and <b style="color: black;">CSS</b></p>
-
-                    </div>
-                    <div class="link-github">
-                        <a href="https://github.com/Jaimedgp?tab=repositories"><p> <img style="height:40px;" src="{% static 'Photos/Code/github.png' %}"></img>
-                        More Projects >>
-                        </p></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ACADEMY INFORMATION -->
-        <section id="academySec">
-            <div class="entry-content">
-                <!-- MSc Data Science -->
-                <div class="cv-entry" id="master">
-                    <div class="cv-title">
-                        <h1>MSc in Data Science</h1>
-                    </div>
-                    <div class="cv-description">
-                        <p>Master in Data Science from the University of Cantabria in the specialty in data science intelligence with subjects of specializing in <b style="color:black;">Physics</b> and <b style="color:black;">Internet of Things (IoT)</b></p>
-                    </div>
-                </div>
-
-                <!-- Physics Degree -->
-                <div class="cv-entry" id="physics">
-                    <div class="cv-title">
-                        <h1>Physics Degree</h1>
-                    </div>
-                    <div class="cv-description">
-                        <p>In 2019 I graduated in physics from the University of Cantabria with the <b style="color: black;">mention of fundamental physics</b>. During the four years of the degree, in addition to my studies in physics, I took the opportunity to increase my knowledge in computer science through <b style="color: black;">additional training</b> in Computer Engineering‘s subject <b style="color: black;">Databases</b>.</p>
-                        <p>My final degree thesis <b style="color: black;">"Simulation of optical frequency combs generated by semiconductor lasers"</b> allowed me to participate as co-author in a scientific article published in the <a style="color: gray;" href="https://ieeexplore.ieee.org/abstract/document/9145638">IEEE Photonics</a> Journal and in a conference of the <a style="color: gray;" href="https://doi.org/10.1117/12.2554563">SPIE Photonics Europe</a></p>
-                    </div>
-                </div>
-
-                <!-- International Baccalaureate -->
-                <div class="cv-entry" id="IB">
-                    <div class="cv-title">
-                        <h1>International Baccalaureate</h1>
-                    </div>
-                    <div class="cv-description">
-                        <p>I did the international baccalaureate diploma program <b style="color: black;">simultaneously</b> with the Spanish national baccalaureate.</p>
-
-                        <p>During these studies and within the DP core Creativity, Activity and Services (CAS), I participated in activities such as <b style="color: black;">philosophical essay</b> contests, <b style="color: black;">Mathematical Olympics</b>, <b style="color: black;">scientific outreach</b> activities with the University of Cantabria and <b style="color: black;">volunteering</b> in the Cáritas organization, preparing packages of food for families in need, continuing this last activity in subsequent years.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SPORTS INFORMATION -->
-        <section id="sportSec">
-            <div class="entry-content" id="sport">
-                <div class="handball">
-                    <div class="horizontal-entry">
-                        {% load static %}
-                        <img src="{% static 'Photos/sport/handball.png' %}"></img>
-                        <p>I started playing handball when I was 5 years old and I was immediately hooked, playing almost any position, but the playmaker being my favorite position. I got to play several finals with my team until I had to leave it when I entered university to focus on my studies and continue as a referee alone. Now, after 13 years as a player and 7 years as a referee, I have to enjoy handball as a spectator.</p>
-                    </div>
-                    <div class="horizontal-entry">
-                        {% load static %}
-                        <img src="{% static 'Photos/sport/referee.png' %}"></img>
-                        <p>In 2012, encouraged by my brother, I decided to discover a new way to enjoy handball by becoming a <b style="color: black;">referee</b> for the Cantabria committee.
-
-                        The year after I stopped competing as a player, I was promoted as a referee to the highest regional category and in 2018 I was called by the <b style="color: black;">National Committee</b> to participate in several national school tournaments, including the National escolar Championship.</p>
-                     </div>
-                </div>
-                <div class="triatlon">
-                    <div class="tri-col">
-                        <div class="horizontal-entry">
-                            {% load static %}
-                            <img src="{% static 'Photos/sport/bici.png' %}"></img>
-                            <p>I have always liked the bicycle not only as a spectator, but in recent years I have been able to enjoy it more as a sport, increasing the training sessions</p>
-                        </div>
-                        <div class="strava-icon">
-                            <a href="https://www.strava.com/athletes/17781308">
-                                <img width="100%" src="{% static 'Photos/sport/strava.png' %}"></img>
-                            </a>
-                        </div>
-                        <div class="horizontal-entry">
-                            {% load static %}
-                            <img src="{% static 'Photos/sport/mediamaraton.png' %}"></img>
-                            <p>When I stopped practicing handball, I had to find a substitute to keep in shape, the race being a good exercise that allows me to be active and combine it with work and study. This has led me to participate in several popular races, completing a half marathon..</p>
+                            <h2><a href="https://github.com/Jaimedgp/jaimedgpWeb"> This Webpage </a></h2>
+                            <p> I started developing this website as a personal project to learn about web
+                                development and the python <b style="color: black;">Django</b> framework,
+                                as well as increasing my knowledge of <b style="color: black;">javascript</b>,
+                                <b style="color: black;">HTML</b> and <b style="color: black;">CSS</b></p>
                         </div>
                     </div>
-                    <div class="tri-col">
-                        <div class="horizontal-entry" id="center-entry">
-                            {% load static %}
-                            <img src="{% static 'Photos/sport/triatlon.png' %}"></img>
-                            <p>Being a bicycle fan and running regularly, I only needed swimming to be able to cover the three modalities that include triathlon.</p>
-                        </div>
-                    </div>
-                    </div>
-                    <!--
-                    <div class="tri-col">
-                        <div class="horizontal-entry" id="tri-main">
-                            {% load static %}
-                            <p>En el 2018 decidí complementar mis entrenamientos personales de carrera y bicicleta con la natación, con el objetivo de introducirme en el triatlon.</p>
-                        </div>
-                    </div>
-                    -->
+                            <div class="link-github">
+                                <a href="https://github.com/Jaimedgp?tab=repositories"><p> <img style="height:40px;" src="{% static 'Photos/Code/github.png' %}"></img>
+                                More Projects >>
+                                </p></a>
+                            </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- PHOTOGRAPHY INFORMATION -->
-        <section id="photographySec">
-            <div class="entry-content">
-                <div class="header">
-                    <h1><b>Photo Gallery</b></h1>
-                    <p>As part of my hobbies, photography must be added, which I try to learn in a self-taught way</p>
-                </div>
-
-                <div class="gallery">
-                    {% load static %}
-                    <div class="photo">
-                        <img src="{% static 'Photos/Gallery/Edited_5848.JPG' %}"></img>
-                    </div>
-                    <div class="photo">
-                        <img src="{% static 'Photos/Gallery/IMG_6014.JPG' %}"></img>
-                    </div>
-                    <div class="photo">
-                        <img src="{% static 'Photos/Gallery/IMG_5205.JPG' %}"></img>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
+        </main>
     </body>
 
+    <!--
     {% load static %}
     <script type="text/javascript" src="{% static 'javascript/main.js' %}"></script>
+    -->
 </html>
 
