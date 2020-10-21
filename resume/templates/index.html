@@ -23,11 +23,11 @@
                     <ul>
                         <li><a href="{% static 'docs/CV_En.pdf' %}" title="My Resume"><div class="resume">Resume</div></a></li>
                         <li> <a  href="https://es.linkedin.com/in/jaimedgp">
-                            <img style="height: 50px;" src="{% static 'Photos/Home_page/linkedin.png' %}"title="Linkedin Profile"></img> </a> </li>
+                            <img style="height: 6rem;" src="{% static 'Photos/Home_page/linkedin.png' %}"title="Linkedin Profile"></img> </a> </li>
                         <li> <a href = "mailto: jaimediezgp@gmail.com">
-                            <img style="height: 50px;" src="{% static 'Photos/Home_page/email.png' %}" title="jaimediezgp@gmail.com"></img> </a> </li>
+                            <img style="height: 6rem;" src="{% static 'Photos/Home_page/email.png' %}" title="jaimediezgp@gmail.com"></img> </a> </li>
                         <li> <a  href="https://github.com/Jaimedgp">
-                            <img style="height: 50px;" src="{% static 'Photos/Home_page/github.png' %}" title="Github Profile"></img> </a> </li>
+                            <img style="height: 6rem;" src="{% static 'Photos/Home_page/github.png' %}" title="Github Profile"></img> </a> </li>
                     </ul>
                 </nav>
             </div>
@@ -44,7 +44,7 @@
             </section>
 
             <!-- CODE INFORMATION -->
-            <section id="codeSec">
+            <section id="code">
                 <div class="projects">
                     <div class="cards">
                         <div class="card">
@@ -81,9 +81,8 @@
             </section>
 
             <!-- ACADEMY INFORMATION -->
-            <section id="academySec">
+            <section id="academy">
                 <div class="curriculum-vitae">
-
                     <!-- MSc Data Science -->
                         <div class="cv-title" id="dataScience">
                             <h4>MSc in Data Science</h4>
@@ -134,8 +133,60 @@
                 </div>
             </section>
 
+            <!-- SPORTS INFORMATION -->
+            <section id="sport">
+                <div class="sport-activities">
+                    <div class="horizontal-entry" id="handball">
+                        {% load static %}
+                        <img src="{% static 'Photos/sport/handball.png' %}"></img>
+                        <p>I started playing handball when I was 5 years old and I was immediately hooked, playing almost any position, but the playmaker being my favorite position. I got to play several finals with my team until I had to leave it when I entered university to focus on my studies and continue as a referee alone. Now, after 13 years as a player and 7 years as a referee, I have to enjoy handball as a spectator.</p>
+                    </div>
+                    <div class="horizontal-entry" id="referee">
+                        {% load static %}
+                        <img src="{% static 'Photos/sport/referee.png' %}"></img>
+                        <p>In 2012, encouraged by my brother, I decided to discover a new way to enjoy handball by becoming a <b style="color: black;">referee</b> for the Cantabria committee.
+
+                        The year after I stopped competing as a player, I was promoted as a referee to the highest regional category and in 2018 I was called by the <b style="color: black;">National Committee</b> to participate in several national school tournaments, including the National escolar Championship.</p>
+                    </div>
+                    <div class="horizontal-entry" id="bike">
+                        {% load static %}
+                        <img src="{% static 'Photos/sport/bici.png' %}"></img>
+                        <p>I have always liked the bicycle not only as a spectator, but in recent years I have been able to enjoy it more as a sport, increasing the training sessions</p>
+                    </div>
+                    <div class="strava-icon" id="strava">
+                        <a href="https://www.strava.com/athletes/17781308">
+                            <img width="100%" src="{% static 'Photos/sport/strava.png' %}"></img>
+                        </a>
+                    </div>
+                    <div class="horizontal-entry" id="runner">
+                        {% load static %}
+                        <img src="{% static 'Photos/sport/mediamaraton.png' %}"></img>
+                        <p>When I stopped practicing handball, I had to find a substitute to keep in shape, the race being a good exercise that allows me to be active and combine it with work and study. This has led me to participate in several popular races, completing a half marathon..</p>
+                    </div>
+                    <div class="horizontal-entry"  id="triatlon">
+                        {% load static %}
+                        <img src="{% static 'Photos/sport/triatlon.png' %}"></img>
+                        <p>Being a bicycle fan and running regularly, I only needed swimming to be able to cover the three modalities that include triathlon.</p>
+                    </div>
+                </div>
+            </section>
+            <!--
             <div class="footer">
+                <nav>
+                    <div class="footer-content">
+                        <img style="height: 6rem;" src="{% static 'Photos/Home_page/linkedin.png' %}"></img>
+                        <ul>
+                            <li> <a  href="https://es.linkedin.com/in/jaimedgp">
+                                <img style="height: 6rem;" src="{% static 'Photos/Home_page/linkedin.png' %}"title="Linkedin Profile"></img> </a> </li>
+                            <li> <a href = "mailto: jaimediezgp@gmail.com">
+                                <img style="height: 6rem;" src="{% static 'Photos/Home_page/email.png' %}" title="jaimediezgp@gmail.com"></img> </a> </li>
+                            <li> <a  href="https://github.com/Jaimedgp">
+                                <img style="height: 6rem;" src="{% static 'Photos/Home_page/github.png' %}" title="Github Profile"></img> </a> </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
+            -->
         </main>
     </body>
 

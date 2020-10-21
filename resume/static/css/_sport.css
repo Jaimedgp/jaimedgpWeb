@@ -1,50 +1,32 @@
-#sportSec { background: whitesmoke; }
-#sport { margin: 0 0; }
+#sport { background: whitesmoke; }
 
-.horizontal-entry {
-    display: inline-flex;
+.sport-activities {
+    display: grid;
 
-    width: 40vw;
-    height: 20vh;
+    grid-template-columns: 5% repeat(12, 1fr) 5%;
+    grid-template-rows: 10% repeat(3, 1fr) 10%;
 
-    margin: 20px 40px;
-
-    background: white;
-    border-radius: 30px 30px 30px 30px;
+    position: relative;
 }
 
-.horizontal-entry > img {
-    height: 95%;
-    margin: 1.5%;
+.horizontal-entry {
+    background: white;
+    margin: 5% 3rem;
+
+    display: flex;
+    flex-direction: row;
+
+    border-radius: 3rem;
 }
 
 .horizontal-entry > p {
-    font-size: 20px;
     padding: 10px;
-
-    text-align: justify;
+    text-align: center;
 }
-
-.handball {
-    display: flex;
-    padding: 50px calc((10vw - 60px));
-}
-
-.triatlon {
-    margin: 20px 0;
-}
-
-.tri-col {
-    display: flex;
-
-    margin: calc(((80vh - 100px) - 40vh) / 4) 1.8vw;
-}
-
-.strava-icon{ width: calc(20vw - 160px); }
 
 .strava-icon > a > img {
     width: 100%;
-    margin-top: calc((25vh - (20vw - 160px)) / 2);
+    margin: auto;
 
     filter: grayscale(100%);
 }
@@ -53,6 +35,27 @@ a > img:hover {
     filter: grayscale(0%);
 }
 
-#center-entry {
-    margin: 0 calc((60vw - 80px) /2);
+#handball {
+    grid-column: 4/8;
+    grid-row: 2/3;
+}
+#referee {
+    grid-column: 8/12;
+    grid-row: 2/3;
+}
+#bike {
+    grid-column: 2/7;
+    grid-row: 3/4;
+}
+#strava {
+    grid-column: 7/9;
+    grid-row: 3/4;
+}
+#runner {
+    grid-column: 9/14;
+    grid-row: 3/4;
+}
+#triatlon {
+    grid-column: 5/11;
+    grid-row: 4/5;
 }
