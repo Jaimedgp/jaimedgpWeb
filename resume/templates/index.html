@@ -19,9 +19,8 @@
         <main>
             <div class="nav-container">
                 <nav>
-                    <!--<img id="logo" src="{% static 'Photos/logo.png' %}"></img>-->
                     <ul>
-                        <li><a href="{% static 'docs/CV_En.pdf' %}" title="My Resume"><div class="resume"> Resume </div></a></li>
+                        <li><a href="{% static 'docs/CV_En.pdf' %}" title="My Resume"><div class="resume">Resume</div></a></li>
                         <li> <a  href="https://es.linkedin.com/in/jaimedgp">
                             <img style="height: 50px;" src="{% static 'Photos/Home_page/linkedin.png' %}"title="Linkedin Profile"></img> </a> </li>
                         <li> <a href = "mailto: jaimediezgp@gmail.com">
@@ -32,6 +31,7 @@
                 </nav>
             </div>
 
+            <!-- HOME PAGE -->
             <section id="home">
                 <div class="home-title">
                     <h1 id="Title"> JaimeDGP </h1>
@@ -48,7 +48,7 @@
                     <div class="cards">
                         <div class="card">
                             <img src="{% static 'Photos/Code/Muon.png' %}"></img>
-                            <h2><a href="https://github.com/Jaimedgp/Muon-Experiment-reader"> MULTI-DAQ </a></h2>
+                            <h5><a href="https://github.com/Jaimedgp/Muon-Experiment-reader"> MULTI-DAQ </a></h5>
                             <p> In 2018 I developed a data acquisition program to measure muon half-life written
                                 in <b style="color: black;">C++</b> for the high energy department of the Institute
                                 of Physics of Cantabria <b style="color: black;">(IFCA)</b> with the aim of being
@@ -58,7 +58,7 @@
                         <div class="card">
                             {% load static %}
                             <img src="{% static 'Photos/Code/JGP.png' %}"></img>
-                            <h2><a href="https://github.com/Jaimedgp/J_Graphics_P"> J Graphics P </a></h2>
+                            <h5><a href="https://github.com/Jaimedgp/J_Graphics_P"> J Graphics P </a></h5>
                             <p> During the first two years of university I developed a <b style="color: black;">data
                                 analysis</b> program with the aim of learning <b style="color: black;">Python</b> in
                                 a self-taught way, which would also help me in the laboratory practices of the degree.
@@ -68,15 +68,73 @@
                         <div class="card">
                             {% load static %}
                             <img src="{% static 'Photos/Code/webpage.png' %}"></img>
-                            <h2><a href="https://github.com/Jaimedgp/jaimedgpWeb"> This Webpage </a></h2> <p> I started
-                                developing this website as a personal project to learn about web development and the
-                                python <b style="color: black;">Django</b> framework, as well as increasing my knowledge
-                                of <b style="color: black;">javascript</b>, <b style="color: black;">HTML</b> and
+                            <h5><a href="https://github.com/Jaimedgp/jaimedgpWeb"> This Webpage </a></h5>
+                            <p> I started developing this website as a personal project to learn about web
+                                development and the python <b style="color: black;">Django</b> framework,
+                                as well as increasing my knowledge of <b style="color: black;">javascript</b>,
+                                <b style="color: black;">HTML</b> and
                                 <b style="color: black;">CSS</b></p>
                         </div>
                     </div>
                 </div>
             </section>
+
+            <!-- ACADEMY INFORMATION -->
+            <section id="academySec">
+                <div class="curriculum-vitae">
+
+                    <!-- MSc Data Science -->
+                        <div class="cv-title" id="dataScience">
+                            <h4>MSc in Data Science</h4>
+                        </div>
+                        <div class="cv-description" id="dataScience">
+                            <p> Master in Data Science from the University of Cantabria in
+                                the specialty in data science intelligence with subjects of
+                                specializing in <b style="color:black;">Physics</b> and
+                                <b style="color:black;">Internet of Things (IoT)</b></p>
+                        </div>
+
+                    <!-- Physics Degree -->
+                        <div class="cv-title" id="physics">
+                            <h4>Physics Degree</h4>
+                        </div>
+                        <div class="cv-description" id="physics">
+                            <p> In 2019 I graduated in physics from the University of Cantabria
+                                with the <b style="color: black;">mention of fundamental physics</b>.
+                                During the four years of the degree, in addition to my studies in
+                                physics, I took the opportunity to increase my knowledge in computer
+                                science through <b style="color: black;">additional training</b>
+                                in Computer Engineering‘s subject <b style="color: black;">Databases</b>.</p>
+                            <p> My final degree thesis <b style="color: black;">"Simulation of optical
+                                frequency combs generated by semiconductor lasers"</b> allowed me to
+                                participate as co-author in a scientific article published in the
+                                <a style="color: gray;" href="https://ieeexplore.ieee.org/abstract/document/9145638">IEEE Photonics</a>
+                                Journal and in a conference of the
+                                <a style="color: gray;" href="https://doi.org/10.1117/12.2554563">SPIE Photonics Europe</a></p>
+                        </div>
+
+                    <!-- International Baccalaureate -->
+                        <div class="cv-title" id="IB">
+                            <h4>International Baccalaureate</h4>
+                        </div>
+                        <div class="cv-description" id="IB">
+                            <p> I did the international baccalaureate diploma program
+                                <b style="color: black;">simultaneously</b> with the
+                                Spanish national baccalaureate.</p>
+                            <p> During these studies and within the DP core Creativity, Activity and
+                                Services (CAS), I participated in activities such as
+                                <b style="color: black;">philosophical essay</b> contests,
+                                <b style="color: black;">Mathematical Olympics</b>,
+                                <b style="color: black;">scientific outreach</b> activities with the
+                                University of Cantabria and <b style="color: black;">volunteering</b>
+                                in the Cáritas organization, preparing packages of food for families
+                                in need, continuing this last activity in subsequent years.</p>
+                        </div>
+                </div>
+            </section>
+
+            <div class="footer">
+            </div>
         </main>
     </body>
 

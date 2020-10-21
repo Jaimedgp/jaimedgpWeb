@@ -3,6 +3,7 @@
     background: url('/static/Photos/Home_page/bkgnd.png') no-repeat center center;
     color: white;
 
+    height: 100vh;
     z-index: -1;
 
     -webkit-background-size: cover;
@@ -29,6 +30,7 @@ nav > ul {
 }
 
 nav ul > li { padding: 1rem; }
+nav ul li > a { font-size: 3rem; }
 
 .resume {
     background: white;
