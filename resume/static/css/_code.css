@@ -19,7 +19,7 @@
     background: white;
     margin: 5% 3rem;
 
-    max-width: 30%;
+    max-width: 25%;
     min-width: 20rem;
 
     display: flex;
@@ -40,9 +40,11 @@ img {
     margin: 1rem auto;
 }
 
-@media screen and (max-width: 1200px) {
-
+@media screen and (max-width: 1200px) and (min-width: 460px) {
     .cards { flex-direction: column; }
-
+    .cards .card{ max-width: 45%; }
+}
+@media screen and (max-width: 600px) {
+    .cards { flex-direction: column; }
     .cards .card{ max-width: 100%; }
 }
