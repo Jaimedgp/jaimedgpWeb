@@ -200,6 +200,34 @@
                     </div>
                 </div>
             </section>
+
+            <!-- PHOTOGRAPHY INFORMATION -->
+            <section id="photo">
+                    <div class="photo-header">
+                        <div class="photo-title">
+                            <h2>Photo Gallery</h2>
+                        </div>
+                        <div class="photo-description">
+                            <h4> As part of my hobbies, photography must be added,
+                                which I try to learn in a self-taught way</h4>
+                        </div>
+                    </div>
+
+                    <div class="gallery">
+                        {% load static %}
+                        <div class="photo" id="photo1">
+                            <img src="{% static 'Photos/Gallery/Edited_5848.JPG' %}"></img>
+                        </div>
+                        <div class="photo" id="photo2">
+                            <img src="{% static 'Photos/Gallery/IMG_6014.JPG' %}"></img>
+                        </div>
+                        <div class="photo" id="photo3">
+                            <img src="{% static 'Photos/Gallery/IMG_5205.JPG' %}"></img>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <!--
             <div class="footer">
                 <nav>
