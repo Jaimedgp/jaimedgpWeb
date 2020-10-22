@@ -1,4 +1,4 @@
-let description = document.getElementById("hola");
+let description = document.getElementById("title");
 let homeSec = document.getElementById("home");
 var init = screen.height*0.1;
 

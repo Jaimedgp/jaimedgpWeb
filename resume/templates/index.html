@@ -34,11 +34,10 @@
 
             <!-- HOME PAGE -->
             <section id="home">
-                <div class="home-title" id="hola">
-                    <h1 id="Title"> JaimeDGP </h1>
-                    <h4 id="description">
-                        I'm <b style="color: white;">Physicist</b> and MSc <b style="color: white">Data Science</b> student,
-                        <b style="color: white">Sport</b> lover and newbie in <b style="color: white">Photography</b>
+                <div class="home-title" id="title">
+                    <h1> JaimeDGP </h1>
+                    <h4> I'm <b style="color: white;">Physicist</b> and MSc <b style="color: white">Data Science</b> student,
+                         <b style="color: white">Sport</b> lover and newbie in <b style="color: white">Photography</b>
                     </h4>
                 </div>
             </section>
@@ -136,37 +135,68 @@
             <!-- SPORTS INFORMATION -->
             <section id="sport">
                 <div class="sport-activities">
-                    <div class="horizontal-entry" id="handball">
+                    <div class="activity" id="handball">
+                        <div class="activity-text">
+                            <p> I started playing handball when I was 5 years old and I was
+                                immediately hooked, playing almost any position, but the
+                                playmaker being my favorite position. I got to play several
+                                finals with my team until I had to leave it when I entered
+                                university to focus on my studies and continue as a referee
+                                alone. Now, after 13 years as a player and 7 years as a
+                                referee, I have to enjoy handball as a spectator.</p>
+                        </div>
                         {% load static %}
                         <img src="{% static 'Photos/sport/handball.png' %}"></img>
-                        <p>I started playing handball when I was 5 years old and I was immediately hooked, playing almost any position, but the playmaker being my favorite position. I got to play several finals with my team until I had to leave it when I entered university to focus on my studies and continue as a referee alone. Now, after 13 years as a player and 7 years as a referee, I have to enjoy handball as a spectator.</p>
                     </div>
-                    <div class="horizontal-entry" id="referee">
+                    <div class="activity" id="referee">
+                        <div class="activity-text">
+                            <p> In 2012, encouraged by my brother, I decided to discover a
+                                new way to enjoy handball by becoming a
+                                <b style="color: black;">referee</b> for the Cantabria
+                                committee.</p>
+                            <p> The year after I stopped competing as a player, I was
+                                promoted as a referee to the highest regional category and
+                                in 2018 I was called by the <b style="color: black;">
+                                National Committee</b> to participate in several national
+                                school tournaments, including the National escolar
+                                Championship.</p>
+                        </div>
                         {% load static %}
                         <img src="{% static 'Photos/sport/referee.png' %}"></img>
-                        <p>In 2012, encouraged by my brother, I decided to discover a new way to enjoy handball by becoming a <b style="color: black;">referee</b> for the Cantabria committee.
-
-                        The year after I stopped competing as a player, I was promoted as a referee to the highest regional category and in 2018 I was called by the <b style="color: black;">National Committee</b> to participate in several national school tournaments, including the National escolar Championship.</p>
                     </div>
-                    <div class="horizontal-entry" id="bike">
+                    <div class="activity" id="bike">
+                        <div class="activity-text">
+                            <p> I have always liked the bicycle not only as a spectator,
+                                but in recent years I have been able to enjoy it more as
+                                a sport, increasing the training sessions</p>
+                        </div>
                         {% load static %}
                         <img src="{% static 'Photos/sport/bici.png' %}"></img>
-                        <p>I have always liked the bicycle not only as a spectator, but in recent years I have been able to enjoy it more as a sport, increasing the training sessions</p>
                     </div>
                     <div class="strava-icon" id="strava">
                         <a href="https://www.strava.com/athletes/17781308">
                             <img width="100%" src="{% static 'Photos/sport/strava.png' %}"></img>
                         </a>
                     </div>
-                    <div class="horizontal-entry" id="runner">
+                    <div class="activity" id="runner">
+                        <div class="activity-text">
+                            <p> When I stopped practicing handball, I had to find a
+                                substitute to keep in shape, the race being a good exercise
+                                that allows me to be active and combine it with work and
+                                study. This has led me to participate in several popular
+                                races, completing a half marathon.</p>
+                        </div>
                         {% load static %}
                         <img src="{% static 'Photos/sport/mediamaraton.png' %}"></img>
-                        <p>When I stopped practicing handball, I had to find a substitute to keep in shape, the race being a good exercise that allows me to be active and combine it with work and study. This has led me to participate in several popular races, completing a half marathon..</p>
                     </div>
-                    <div class="horizontal-entry"  id="triatlon">
+                    <div class="activity"  id="triatlon">
+                        <div class="activity-text">
+                            <p> Being a bicycle fan and running regularly, I only needed
+                                swimming to be able to cover the three modalities that
+                                include triathlon.</p>
+                        </div>
                         {% load static %}
                         <img src="{% static 'Photos/sport/triatlon.png' %}"></img>
-                        <p>Being a bicycle fan and running regularly, I only needed swimming to be able to cover the three modalities that include triathlon.</p>
                     </div>
                 </div>
             </section>

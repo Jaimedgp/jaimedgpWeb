@@ -6,7 +6,10 @@
 @import "_footer.css";
 
 
-html { font-size: 62.5%; }
+html {
+    overflow-x: hidden;
+    font-size: 62.5%;
+}
 
 *{
     margin: 0;
@@ -44,9 +47,6 @@ img {
 @media screen and (max-width: 1200px) and (min-width: 700px) {
     html { font-size: 40%; }
 }
-@media screen and (max-width: 700px) and (min-width: 460px){
+@media screen and (max-width: 700px){
     html { font-size: 30%; }
-}
-@media screen and (max-width: 460px) {
-    html { font-size: 15%; }
 }
