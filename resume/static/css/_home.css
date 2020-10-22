@@ -45,6 +45,7 @@ nav ul li > a { font-size: 3rem; }
 .home-title {
     display: grid;
     min-height: 95vh;
+    width: 100vw;
 
     grid-template-columns: 10% minmax(5rem, 1fr) 10%;
     grid-template-rows: 3fr 2fr 1fr ;
