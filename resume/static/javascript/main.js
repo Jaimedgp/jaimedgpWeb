@@ -20,13 +20,13 @@ let gallery = document.getElementsByClassName("gallery");
 
 let photo1 = document.getElementById("photo1");
 photo1.onclick = function(){
-    gallery.style.left = '0';
+    gallery[0].style.left = '0';
 };
 let photo2 = document.getElementById("photo2");
 photo2.onclick = function(){
-    gallery.style.left = '-50vw';
+    gallery[0].style.left = '-50vw';
 };
 let photo3 = document.getElementById("photo3");
 photo3.onclick = function(){
-    gallery.style.left = '-100vw';
+    gallery[0].style.left = '-100vw';
 };

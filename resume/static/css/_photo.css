@@ -1,18 +1,16 @@
-#photo {
-    min-height: 100vh;
-
-    background: url("/static/Photos/Gallery/BW_5340.jpg") no-repeat;
-    background-size: 100vw 40vh;
-    background-position: top center;
-}
+#photo { min-height: 100vh; }
 
 .photo-header {
-    height: 40vh;
+    background: url("/static/Photos/Gallery/BW_5340.jpg") no-repeat;
+    background-size: 100vw 100%;
+    background-position: top center;
+
+    min-height: 40vh;
     display: grid;
     text-align: center;
 
     grid-template-columns: 10% minmax(5rem, 1fr) 10%;
-    grid-template-rows: 1fr 1fr ;
+    grid-template-rows: 5% 1fr 1fr 5%;
 }
 
 .photo-title {
@@ -20,14 +18,14 @@
     align-self: center;
 
     grid-column: 2/3;
-    grid-row: 1/2;
+    grid-row: 2/3;
 }
 .photo-description {
     color: silver;
     align-self: start;
 
     grid-column: 2/3;
-    grid-row: 2/3;
+    grid-row: 3/4;
 }
 
 .gallery {
@@ -38,6 +36,7 @@
     width: 200vw;
 
     left: -50vw;
+    transition: 1s;
 
     grid-template-columns: 10% repeat(3, minmax(5rem, 1fr)) 10%;
     grid-template-rows: 10% 1fr 10%;
